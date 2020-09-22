@@ -173,3 +173,206 @@ header .header__info .header__info-container .header__description {
   line-height: 24px;
   text-align: center;
 }
+
+.main .title {
+  font-family: "Playfair Display";
+  text-align: center;
+  line-height: 48px;
+  font-size: 36px;
+}
+.main .main__new-collection {
+  display: flex;
+  height: 730px;
+  width: 100vw;
+}
+.main .main__new-collection .new-collection__season-container {
+  padding: 0 50px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  flex: 0 0 55%;
+}
+.main .main__new-collection .new-collection__season-container .season-container__title p {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.main .main__new-collection .new-collection__season-container .season-container__title p:after {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 1px;
+  background-color: #fff;
+  margin: 50px auto;
+}
+.main .main__new-collection .new-collection__season-container .season-container__goods20 {
+  max-width: 880px;
+  width: 100%;
+  display: flex;
+  height: 405px;
+  align-items: center;
+  justify-content: space-between;
+}
+.main .main__new-collection .new-collection__season-container .season-container__goods20 .season-container__goods-container .season-container__pic-container {
+  background-color: #191b1c;
+  max-width: 260px;
+  width: 100%;
+  height: 325px;
+  display: flex;
+  align-items: center;
+}
+.main .main__new-collection .new-collection__season-container .season-container__goods20 .season-container__goods-container .season-container__watch-info p {
+  font-size: 18px;
+  line-height: 24px;
+  margin: 25px 0 10px;
+}
+.main .main__new-collection .new-collection__season-container .season-container__goods20 .season-container__goods-container .season-container__watch-info p:last-child {
+  font-size: 16px;
+}
+.main .main__new-collection .new-collection__catalog-container {
+  background: url(../img/newCollection.jpg) center no-repeat rgba(0, 0, 0, 0.5);
+  width: 100%;
+  background-blend-mode: color;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.main .main__new-collection .new-collection__catalog-container .catalog-container__catalog-info {
+  margin: 0 0 100px;
+  max-width: 380px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main .main__new-collection .new-collection__catalog-container .catalog-container__catalog-info .catalog-container__title {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.main .main__new-collection .new-collection__catalog-container .catalog-container__catalog-info .catalog-container__title:after {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 1px;
+  background-color: #fff;
+  margin: 30px auto;
+}
+.main .main__new-collection .new-collection__catalog-container .catalog-container__catalog-info .catalog-container__btn {
+  display: block;
+  max-width: 140px;
+  width: 100%;
+  height: 50px;
+  border: 1px solid #fff;
+  font-family: "PT Sans";
+  font-size: 18px;
+  line-height: 50px;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.main .main__collection2018 {
+  display: flex;
+  width: 100vw;
+  height: 600px;
+}
+.main .main__collection2018 .collection2018__cover-collection {
+  flex: 0 0 45%;
+  background: url(../img/collection-2018.jpg) no-repeat center rgba(0, 0, 0, 0.5);
+  width: 100%;
+  background-blend-mode: color;
+}
+.main .main__collection2018 .collection2018__collection-description {
+  flex: 0 0 55%;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+.main .main__collection2018 .collection2018__collection-description .collection2018__collection2018-container {
+  max-width: 470px;
+  width: 100%;
+}
+.main .main__collection2018 .collection2018__collection-description .collection2018__collection2018-container .collection2018__title {
+  font-family: "Playfair Display";
+  font-size: 36px;
+  line-height: 48px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.main .main__collection2018 .collection2018__collection-description .collection2018__collection2018-container .collection2018__title:after {
+  content: "";
+  display: block;
+  margin: 40px auto;
+  width: 120px;
+  height: 1px;
+  background-color: #fff;
+}
+.main .main__collection2018 .collection2018__collection-description .collection2018__collection2018-container .collection2018__description {
+  font-family: "PT Sans";
+  text-align: center;
+  font-size: 14px;
+  line-height: 21px;
+}
+.main .main__collection2018 .collection2018__collection-description .collection2018__collection2018-container .collection2018-btn a {
+  display: block;
+  max-width: 310px;
+  width: 100%;
+  height: 50px;
+  border: 1px solid #fff;
+  font-family: "PT Sans";
+  font-size: 18px;
+  line-height: 50px;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin: 60px auto 0;
+}
+.main .main__new-goods {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  width: 100vw;
+  height: 1290px;
+}
+.main .main__new-goods .new-goods__title:after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 120px;
+  background-color: #fff;
+  margin: 40px auto 80px;
+}
+.main .main__new-goods .new-goods__items {
+  display: flex;
+  align-items: space-between;
+  width: 100%;
+  justify-content: space-between;
+  max-width: calc(260px * 4 + 23px * 3);
+  width: 100%;
+  flex-wrap: wrap;
+}
+.main .main__new-goods .new-goods__items .new-goods__item {
+  flex: 0 0 25%;
+}
+.main .main__new-goods .new-goods__items .new-goods__item .new-goods__img-cont {
+  background-color: #191b1c;
+  max-width: 260px;
+  width: 100%;
+  height: 325px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main .main__new-goods .new-goods__items .new-goods__item .new-goods__watch-info p {
+  font-size: 18px;
+  line-height: 24px;
+  margin: 25px 0 10px;
+}
+.main .main__new-goods .new-goods__items .new-goods__item .new-goods__watch-info p:last-child {
+  font-size: 16px;
+  margin: 0 0 40px 0;
+}
