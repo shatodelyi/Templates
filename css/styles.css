@@ -10,24 +10,23 @@ body {
   background-color: #000;
   font-family: "Playfair Display";
   color: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0;
 }
 
 header {
   font-family: "PT Sans";
   max-width: 1510px;
   width: 100%;
-  margin-top: 0;
+  margin: 0 auto;
 }
 header .container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 header .header__top {
+  max-width: 1100px;
+  width: 100%;
   display: flex;
   align-items: center;
   width: 100%;
@@ -36,10 +35,12 @@ header .header__top {
   line-height: 16px;
   height: 45px;
   color: #969696;
+  padding: 0 20px;
 }
 header .header__top svg {
   height: 14px;
   width: 14px;
+  fill: #969696;
 }
 header .header__top .header__contact-info {
   max-width: 400px;
@@ -72,20 +73,32 @@ header .header__top .header__logIn {
   max-width: 125px;
   width: 100%;
   color: #969696;
+  transition: all 0.3s linear;
+}
+header .header__top .header__logIn svg {
+  transition: all 0.3s linear;
+}
+header .header__top .logIn--hover:hover {
+  color: #fff;
+}
+header .header__top .logIn--hover:hover svg {
+  fill: #fff;
 }
 header .header__navbar {
   display: flex;
   align-items: center;
   width: 100%;
-  justify-content: space-between;
-  height: 80px;
+  justify-content: center;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
   color: #969696;
+  max-width: 1100px;
+  width: 100%;
+  padding: 0 20px;
 }
 header .header__navbar .header__logo {
-  flex: 0 0 55%;
+  flex: 1 0 auto;
   font-family: "Post No Bills Jaffna Bold";
   font-size: 36px;
   line-height: 54px;
@@ -96,11 +109,10 @@ header .header__navbar .header__logo a {
   transition: all 0.3s linear;
 }
 header .header__navbar .logo--hover:hover {
-  background-color: #969696;
-  color: #000;
+  color: #fff;
 }
 header .header__navbar .header__nav-container {
-  flex: 0 0 37%;
+  flex: 0 0 35%;
 }
 header .header__navbar .header__nav-container .header__nav-list {
   display: flex;
@@ -109,6 +121,11 @@ header .header__navbar .header__nav-container .header__nav-list {
   justify-content: space-around;
 }
 header .header__navbar .header__nav-container .header__nav-link {
+  width: 100%;
+  color: #969696;
+  padding: 31px 10px;
+}
+header .header__navbar .header__nav-container .header__nav-link li {
   display: flex;
   align-items: center;
   width: 100%;
@@ -116,20 +133,36 @@ header .header__navbar .header__nav-container .header__nav-link {
   flex: 0 0 33.3%;
   height: 80px;
   transition: all 0.3s linear;
+  text-align: center;
 }
-header .header__navbar .header__nav-container .nav-link--hover:hover {
+header .header__navbar .header__nav-container .nav-link--hover:hover li {
   background-color: #1f1f1f;
   color: #fff;
 }
 header .header__navbar .header__buttons {
+  flex: 0 0 10%;
   display: flex;
   align-items: center;
   width: 100%;
   justify-content: space-around;
+  height: 80px;
 }
-header .header__navbar .header__buttons svg {
-  width: 25px;
-  height: 25px;
+header .header__navbar .header__buttons .header__button {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  transition: all 0.3s linear;
+  height: 100%;
+}
+header .header__navbar .header__buttons .header__button svg {
+  display: block;
+  width: 22px;
+  height: 22px;
+  fill: #fff;
+}
+header .header__navbar .header__buttons .button--hover:hover {
+  background-color: #1f1f1f;
 }
 header .header__info {
   height: 810px;
@@ -139,6 +172,7 @@ header .header__info {
   background-size: cover;
 }
 header .header__info .header__info-container {
+  padding: 0 20px;
   margin: auto;
   max-width: 730px;
   width: 100%;
@@ -183,25 +217,34 @@ header .header__info .header__info-container .header__description {
   text-align: center;
 }
 
+.main {
+  margin: auto;
+}
 .main .title {
   font-family: "Playfair Display";
   text-align: center;
   line-height: 48px;
   font-size: 36px;
 }
+.main .btn--hover:hover {
+  background-color: rgba(128, 128, 128, 0.5);
+}
 .main .main__new-collection {
   display: flex;
-  height: 730px;
+  justify-content: center;
   width: 100vw;
+  flex-wrap: wrap;
 }
 .main .main__new-collection .new-collection__season-container {
-  padding: 0 50px;
+  margin: 0 auto 20px;
+  padding: 0 20px;
   display: flex;
   align-items: center;
   width: 100%;
   justify-content: center;
   flex-direction: column;
-  flex: 0 0 55%;
+  width: 100%;
+  flex: 1 0 55%;
 }
 .main .main__new-collection .new-collection__season-container .season-container__title p {
   text-transform: uppercase;
@@ -219,17 +262,22 @@ header .header__info .header__info-container .header__description {
   max-width: 880px;
   width: 100%;
   display: flex;
-  height: 405px;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+}
+.main .main__new-collection .new-collection__season-container .season-container__goods20 .season-container__goods-container {
+  margin: auto;
 }
 .main .main__new-collection .new-collection__season-container .season-container__goods20 .season-container__goods-container .season-container__pic-container {
   background-color: #191b1c;
-  max-width: 260px;
   width: 100%;
-  height: 325px;
+  padding: 55px 20px;
   display: flex;
   align-items: center;
+}
+.main .main__new-collection .new-collection__season-container .season-container__goods20 .season-container__goods-container .season-container__pic-container img {
+  width: 100%;
 }
 .main .main__new-collection .new-collection__season-container .season-container__goods20 .season-container__goods-container .season-container__watch-info p {
   font-size: 18px;
@@ -240,17 +288,17 @@ header .header__info .header__info-container .header__description {
   font-size: 16px;
 }
 .main .main__new-collection .new-collection__catalog-container {
-  background: url(../img/newCollection.jpg) center no-repeat rgba(0, 0, 0, 0.5);
-  width: 100%;
+  flex: 1 0 45%;
+  min-width: 550px;
+  background: url(../img/newCollection.jpg) no-repeat rgba(0, 0, 0, 0.5);
   background-blend-mode: color;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: flex-end;
 }
 .main .main__new-collection .new-collection__catalog-container .catalog-container__catalog-info {
-  margin: 0 0 100px;
-  max-width: 380px;
-  width: 100%;
+  margin: 0 0 10%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -269,22 +317,21 @@ header .header__info .header__info-container .header__description {
 }
 .main .main__new-collection .new-collection__catalog-container .catalog-container__catalog-info .catalog-container__btn {
   display: block;
-  max-width: 140px;
-  width: 100%;
-  height: 50px;
+  padding: 12px 28px;
   border: 1px solid #fff;
   font-family: "PT Sans";
   font-size: 18px;
-  line-height: 50px;
   text-align: center;
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 0.1em;
+  transition: all 0.3s linear;
 }
 .main .main__collection2018 {
   display: flex;
   width: 100vw;
-  height: 600px;
+  max-height: 600px;
+  height: 100%;
 }
 .main .main__collection2018 .collection2018__cover-collection {
   flex: 0 0 45%;
@@ -294,14 +341,14 @@ header .header__info .header__info-container .header__description {
 }
 .main .main__collection2018 .collection2018__collection-description {
   flex: 0 0 55%;
+  margin: auto;
+}
+.main .main__collection2018 .collection2018__collection-description .collection2018__collection2018-container {
   display: flex;
   align-items: center;
   width: 100%;
   justify-content: center;
-}
-.main .main__collection2018 .collection2018__collection-description .collection2018__collection2018-container {
-  max-width: 470px;
-  width: 100%;
+  flex-direction: column;
 }
 .main .main__collection2018 .collection2018__collection-description .collection2018__collection2018-container .collection2018__title {
   font-family: "Playfair Display";
@@ -319,25 +366,25 @@ header .header__info .header__info-container .header__description {
   background-color: #fff;
 }
 .main .main__collection2018 .collection2018__collection-description .collection2018__collection2018-container .collection2018__description {
+  max-width: 470px;
+  width: 100%;
   font-family: "PT Sans";
   text-align: center;
   font-size: 14px;
   line-height: 21px;
 }
-.main .main__collection2018 .collection2018__collection-description .collection2018__collection2018-container .collection2018-btn a {
+.main .main__collection2018 .collection2018__collection-description .collection2018__collection2018-container .collection2018-btn {
   display: block;
-  max-width: 310px;
-  width: 100%;
-  height: 50px;
+  padding: 12px 28px;
   border: 1px solid #fff;
   font-family: "PT Sans";
   font-size: 18px;
-  line-height: 50px;
   text-align: center;
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   margin: 60px auto 0;
+  transition: all 0.3s linear;
 }
 .main .main__new-goods {
   display: flex;
@@ -345,7 +392,7 @@ header .header__info .header__info-container .header__description {
   width: 100%;
   justify-content: center;
   width: 100vw;
-  height: 1290px;
+  padding: 5%;
 }
 .main .main__new-goods .new-goods__title {
   text-transform: uppercase;
@@ -369,16 +416,18 @@ header .header__info .header__info-container .header__description {
   flex-wrap: wrap;
 }
 .main .main__new-goods .new-goods__items .new-goods__item {
-  flex: 0 0 25%;
+  margin: auto;
 }
 .main .main__new-goods .new-goods__items .new-goods__item .new-goods__img-cont {
   background-color: #191b1c;
+  padding: 55px 20px;
   max-width: 260px;
   width: 100%;
-  height: 325px;
   display: flex;
   align-items: center;
-  justify-content: center;
+}
+.main .main__new-goods .new-goods__items .new-goods__item .new-goods__img-cont img {
+  width: 100%;
 }
 .main .main__new-goods .new-goods__items .new-goods__item .new-goods__watch-info p {
   font-size: 18px;
@@ -394,7 +443,6 @@ header .header__info .header__info-container .header__description {
   align-items: center;
   width: 100%;
   justify-content: center;
-  height: 365px;
   flex-direction: column;
   background-color: #0F0F0F;
 }
@@ -408,13 +456,26 @@ header .header__info .header__info-container .header__description {
   height: 1px;
   width: 120px;
   background-color: #fff;
-  margin: 40px auto 80px;
+  margin: 40px auto 0;
 }
 .main .main__brands .brands__items {
+  padding: 20px 20px 80px;
   display: flex;
+  flex-wrap: wrap;
   max-width: 1110px;
   width: 100%;
-  justify-content: space-between;
+  justify-content: center;
+}
+.main .main__brands .brands__items .brand__item {
+  margin: 20px 10px 0 0;
+  flex: 1 0 25%;
+  max-width: 255px;
+  min-width: 235px;
+}
+.main .main__brands .brands__items .brand__item img {
+  display: block;
+  margin: auto;
+  width: 100%;
 }
 
 footer {
@@ -423,6 +484,7 @@ footer {
   width: 100%;
   justify-content: center;
   flex-direction: column;
+  width: 100vw;
 }
 footer .title {
   font-family: "Playfair Display";
@@ -432,14 +494,19 @@ footer .title {
   margin: 0 0 40px 0;
 }
 footer .footer__main-info-container {
+  display: flex;
+  align-items: none;
+  width: 100%;
+  justify-content: none;
   background: url(../img/footer-bg.jpg) center no-repeat rgba(0, 0, 0, 0.5);
   background-size: cover;
   background-blend-mode: color;
   width: 100vw;
+  flex-wrap: wrap;
 }
 footer .footer__main-info-container .footer__main-info {
   margin: auto;
-  max-width: 1110px;
+  max-width: 1150px;
   height: 400px;
   display: flex;
   align-items: center;
@@ -448,12 +515,18 @@ footer .footer__main-info-container .footer__main-info {
 }
 footer .footer__main-info-container .footer__main-info .main-info__items {
   display: flex;
-  justify-content: space-between;
+  align-items: none;
   width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
   height: calc(40px + 32px + 147px);
+  padding: 20px;
+  margin: 0 0 100px 0;
 }
 footer .footer__main-info-container .footer__main-info .main-info__items .main-info__item {
+  margin: 20px 10px 0;
   flex: 0 0 31.5%;
+  min-width: 350px;
   font-family: "PT Sans";
   font-size: 14px;
   line-height: 150%;
@@ -468,10 +541,14 @@ footer .footer__main-info-container .footer__main-info .main-info__items .items_
   height: 100%;
   align-items: center;
 }
-footer .footer__main-info-container .footer__main-info .main-info__items .items__categories .categories__buttons a {
+footer .footer__main-info-container .footer__main-info .main-info__items .items__categories .categories__buttons .categories__item {
   color: #fff;
   padding: 10px 20px;
   background-color: #0f0f0f;
+  transition: all 0.3s linear;
+}
+footer .footer__main-info-container .footer__main-info .main-info__items .items__categories .categories__buttons .btn--hover:hover {
+  background-color: rgba(128, 128, 128, 0.5);
 }
 footer .footer__main-info-container .footer__main-info .main-info__items .items__mailing .mailing__subscribe {
   margin: 40px 0 0 0;
@@ -503,8 +580,13 @@ footer .footer__main-info-container .footer__main-info .main-info__items .items_
   text-transform: uppercase;
   line-height: 150%;
   letter-spacing: 0.05em;
+  transition: all 0.3s linear;
+}
+footer .footer__main-info-container .footer__main-info .main-info__items .items__mailing .mailing__subscribe button:hover {
+  background-color: rgba(128, 128, 128, 0.5);
 }
 footer .footer__copyright {
+  flex: 0 0 50px;
   max-width: 1110px;
   height: 50px;
   display: flex;
